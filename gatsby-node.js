@@ -56,6 +56,8 @@ exports.sourceNodes = function () {
           case 0:
             createNode = boundActionCreators.createNode;
 
+            throw Error("Some error to demonstrate npm link works")
+
             createVideoNodesFromChannelId = function () {
               var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(channelId, apiKey) {
                 var api, videos, channelResp, channelData, _videos, uploadsId, pageSize, videoResp, _videos2, nextPageToken;
